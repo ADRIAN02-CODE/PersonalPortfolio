@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen - AI & Data Science Portfolio</title>
+    <meta name="description" content="Personal portfolio of Alex Chen, Undergraduate in AI & Data Science">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <button class="logo" onclick="scrollToTop()">AC</button>
+            <div class="nav-links">
+                <button onclick="scrollToSection('about')">About</button>
+                <button onclick="scrollToSection('projects')">Projects</button>
+                <button onclick="scrollToSection('skills')">Skills</button>
+                <button onclick="scrollToSection('contact')">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="grid-pattern"></div>
+        <div class="hero-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="profile-section">
+                <div class="profile-container">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" 
+                         alt="AI & Data Science Student" class="profile-img">
+                    <div class="rotating-ring"></div>
+                    <div class="status-indicator"></div>
+                </div>
+            </div>
+
+            <h1 class="hero-title gradient-text">Alex Chen</h1>
+            <h2 class="hero-subtitle glow-text">Aspiring AI Engineer</h2>
+            <p class="hero-description">Innovating the future through intelligent systems and data</p>
+            
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('projects')">Explore My Work</button>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+            </div>
+
+            <div class="social-links">
+                <a href="mailto:alex.chen@example.com" class="social-link">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/alexchen" class="social-link">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/alexchen" class="social-link">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="grid-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate undergraduate student pursuing a degree in Artificial Intelligence and Data Science. My journey began with curiosity about how machines can learn, think, and solve complex problems.</p>
+                    <p>I specialize in machine learning, deep neural networks, and data-driven solutions, with hands-on experience building intelligent systems that make real-world impact. My focus areas include computer vision, natural language processing, and predictive analytics.</p>
+                    <p>When I'm not coding, you'll find me exploring cutting-edge research papers, contributing to open-source AI projects, or experimenting with emerging technologies that push the boundaries of artificial intelligence.</p>
+                </div>
+                <div class="about-visual">
+                    <div class="ai-badge">
+                        <span class="ai-text">AI</span>
+                        <p class="ai-subtitle glow-text">Building Tomorrow's Intelligence</p>
+                        <div class="pulse-dots">
+                            <div class="dot dot-1"></div>
+                            <div class="dot dot-2"></div>
+                            <div class="dot dot-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="grid-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Featured Projects</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Cutting-edge AI solutions that push the boundaries of what's possible</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop" alt="Neural Sentiment Engine">
+                        <div class="project-overlay"></div>
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Neural Sentiment Engine</h3>
+                        <p class="project-description">Advanced deep learning model using transformer architecture to analyze emotional patterns in social media data with 95% accuracy across multiple languages.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Transformers</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                        <a href="#" class="project-link">Explore Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=500&h=300&fit=crop" alt="Quantum Stock Predictor">
+                        <div class="project-overlay"></div>
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Quantum Stock Predictor</h3>
+                        <p class="project-description">Hybrid quantum-classical machine learning system for financial forecasting using quantum computing principles and advanced time series analysis.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Qiskit</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Finance</span>
+                        </div>
+                        <a href="#" class="project-link">Explore Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop" alt="Medical Vision AI">
+                        <div class="project-overlay"></div>
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Medical Vision AI</h3>
+                        <p class="project-description">Computer vision system for automated medical diagnosis using convolutional neural networks and attention mechanisms for early disease detection.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Healthcare</span>
+                        </div>
+                        <a href="#" class="project-link">Explore Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Smart Analytics Platform">
+                        <div class="project-overlay"></div>
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Analytics Platform</h3>
+                        <p class="project-description">Real-time customer behavior analytics using unsupervised learning and clustering algorithms to optimize business intelligence and marketing strategies.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Apache Spark</span>
+                            <span class="tag">MLOps</span>
+                        </div>
+                        <a href="#" class="project-link">Explore Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="grid-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Skills & Technologies</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Advanced technologies powering next-generation AI solutions</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">💻</span>
+                        <h3 class="skill-title">Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Julia</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">🤖</span>
+                        <h3 class="skill-title">AI/ML Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">Hugging Face</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">📊</span>
+                        <h3 class="skill-title">Data Science Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Apache Spark</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">🧠</span>
+                        <h3 class="skill-title">Deep Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Neural Networks</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Transformers</span>
+                        <span class="skill-tag">GANs</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">☁️</span>
+                        <h3 class="skill-title">MLOps & Cloud</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">MLflow</span>
+                        <span class="skill-tag">Apache Airflow</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">⚡</span>
+                        <h3 class="skill-title">Advanced Techniques</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Reinforcement Learning</span>
+                        <span class="skill-tag">Quantum ML</span>
+                        <span class="skill-tag">AutoML</span>
+                        <span class="skill-tag">Federated Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="grid-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Let's Connect</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Ready to collaborate on the next breakthrough in artificial intelligence?</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon email-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-title">Email</h3>
+                    <p class="contact-info">alex.chen@university.edu</p>
+                    <a href="mailto:alex.chen@university.edu" class="contact-link">Send Message →</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon linkedin-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-title">LinkedIn</h3>
+                    <p class="contact-info">Professional Network</p>
+                    <a href="https://linkedin.com/in/alexchen" class="contact-link">Connect Now →</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon github-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-title">GitHub</h3>
+                    <p class="contact-info">Open Source Code</p>
+                    <a href="https://github.com/alexchen" class="contact-link">View Projects →</a>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h3 class="cta-title gradient-text">Ready to Build the Future?</h3>
+                <p class="cta-description">Whether you're looking for an AI research collaborator, innovative problem solver, or passionate team member ready to tackle tomorrow's challenges, let's connect and create something extraordinary together.</p>
+                <button class="btn-primary" onclick="window.location.href='mailto:alex.chen@university.edu'">Start Collaboration</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="grid-pattern"></div>
+        <div class="container">
+            <div class="footer-content">
+                <h3 class="footer-title gradient-text">Alex Chen</h3>
+                <p class="footer-subtitle">Aspiring AI Engineer</p>
+                <div class="footer-divider"></div>
+                <p class="footer-text">© 2024 Alex Chen. Built with HTML, CSS & JavaScript.</p>
+                <p class="footer-tagline">Innovating the future through intelligent systems and data</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
